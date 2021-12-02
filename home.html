@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="login.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/F83F6E00-42FF-4741-B1BD-B18C2DE9CA81/main.js" charset="UTF-8"></script>
+
+</head>
+<body style="background-color:#66ffc2;">
+<div class="logo">
+<img src="Bank.jpg" alt="ABES EC" float="left" height="130" width="200">
+<div class ="title">
+<u><font style="margin-left:-150px ; margin-top:60px; position:absolute; color:#99004d; " size="7px"><b><u>BANKING MANAGEMENT SYSTEM</u></b></font></u>
+
+</div>
+
+</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+   <a href="NewAccount.html">New Account</a>
+  <a href="BalanceForm.html">Balance </a>
+  <a href="DepositeForm.html">Deposite</a>
+  <a href="WithDraw.html">WithDraw</a>
+  <a href="TransferForm.html">Transfer</a>
+  <a href="CloseAccount.html">Close Account</a> 
+  <a href="ContactUs.html">ContactUs</a>
+
+</div>
+
+<div class="w3-content w3-section" style="max-width:475px">
+  <img class="mySlides" src="a.jpg" style="width:290%">
+  <img class="mySlides" src="b4.jpeg" style="width:290%;height:50%">
+  <img class="mySlides" src="c4.jpeg" style="width:290%">
+  <img class="mySlides" src="d.jpeg" style="width:290%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
